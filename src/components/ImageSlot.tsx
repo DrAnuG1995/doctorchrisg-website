@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+// next/image doesn't apply basePath to local src, so prepend it for /-rooted
+// paths. Empty locally; "/<repo>" on GitHub Pages.
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 type Props = {
   src?: string;
   alt: string;
@@ -25,9 +29,10 @@ export default function ImageSlot({
   ratio = "aspect-[4/5]",
 }: Props) {
   if (src) {
+    const finalSrc = src.startsWith("/") ? `${BASE_PATH}${src}` : src;
     return (
       <div className={`relative overflow-hidden ${ratio} ${className}`}>
-        <Image src={src} alt={alt} fill priority={priority} className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+        <Image src={finalSrc} alt={alt} fill priority={priority} className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
       </div>
     );
   }
