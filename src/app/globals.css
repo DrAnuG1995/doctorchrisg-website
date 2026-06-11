@@ -4,13 +4,13 @@
    Tailwind v4 turns each token into utilities (bg-ink, text-accent, font-display)
    AND exposes them as CSS vars (var(--color-accent)) for the helpers below. */
 @theme {
-  --color-ink: #0a0a0c;
-  --color-ink-soft: #16161a;
+  --color-ink: #0a1733; /* navy */
+  --color-ink-soft: #122a52; /* lighter navy */
   --color-paper: #ffffff;
-  --color-cream: #f6f4ef;
-  --color-accent: #6d28d9; /* violet */
-  --color-accent-2: #db2777; /* pink */
-  --color-accent-3: #f59e0b; /* warm amber, sparingly */
+  --color-cream: #eef3fb; /* cool light blue-grey */
+  --color-accent: #2563eb; /* blue */
+  --color-accent-2: #06b6d4; /* cyan */
+  --color-accent-3: #38bdf8; /* sky, sparingly */
 
   --font-display: var(--font-display), "Space Grotesk", system-ui, sans-serif;
   --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
