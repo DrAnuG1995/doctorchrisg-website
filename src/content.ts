@@ -79,13 +79,12 @@ export const metrics = [
   { value: "CCIM 2025", label: "National speaker" },
 ];
 
-// Content pillars / standout moments. Add image paths (files in /public) to swap
-// the placeholders for real post screenshots.
+// Standout moments — his top-viewed Reels (screenshots in /public).
 export const standoutPosts = [
-  { caption: "Longevity", image: "", url: "https://www.instagram.com/doctorchrisg/" },
-  { caption: "Metabolic health", image: "", url: "https://www.instagram.com/doctorchrisg/" },
-  { caption: "Beating burnout", image: "", url: "https://www.instagram.com/doctorchrisg/" },
-  { caption: "Lifestyle design", image: "", url: "https://www.instagram.com/doctorchrisg/" },
+  { caption: "Back in the UK after a year in Australia", views: "1.7M", image: "/post-uk.png", url: "https://www.instagram.com/doctorchrisg/" },
+  { caption: "The hospital hierarchy, explained", views: "1.4M", image: "/post-hierarchy.png", url: "https://www.instagram.com/doctorchrisg/" },
+  { caption: "Asking radiology for a scan as a junior doctor", views: "1.4M", image: "/post-radiology.png", url: "https://www.instagram.com/doctorchrisg/" },
+  { caption: "Day in the life: emergency doctor, rural Australia", views: "1.3M", image: "/post-ditl.png", url: "https://www.instagram.com/doctorchrisg/" },
 ];
 
 // Optional feature image for the "social success" section (e.g. behind-the-scenes).

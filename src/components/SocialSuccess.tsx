@@ -1,7 +1,7 @@
 import { socials, standoutPosts, socialFeatureImage } from "@/content";
 import ImageSlot from "./ImageSlot";
 import CountUp from "./CountUp";
-import { platformIcon, ArrowIcon } from "./icons";
+import { platformIcon, ArrowIcon, EyeIcon } from "./icons";
 
 export default function SocialSuccess() {
   return (
@@ -78,18 +78,21 @@ export default function SocialSuccess() {
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative block overflow-hidden rounded-xl"
+              className="group block"
             >
-              <ImageSlot
-                src={post.image}
-                alt={post.caption}
-                label="[NEEDS: post thumbnail]"
-                ratio="aspect-square"
-                className="rounded-xl transition-transform duration-300 group-hover:scale-105"
-              />
-              <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-ink/80 to-transparent p-3 text-xs font-medium text-white">
-                {post.caption}
-              </span>
+              <div className="overflow-hidden rounded-xl ring-1 ring-ink/10 shadow-sm">
+                <ImageSlot
+                  src={post.image}
+                  alt={post.caption}
+                  label="[NEEDS: post thumbnail]"
+                  ratio="aspect-[5/8]"
+                  className="transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="mt-2 flex items-center gap-1.5 text-sm font-semibold text-ink/70">
+                <EyeIcon className="h-4 w-4 text-accent" />
+                {post.views} views
+              </div>
             </a>
           ))}
         </div>
