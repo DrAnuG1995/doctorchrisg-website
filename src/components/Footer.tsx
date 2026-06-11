@@ -7,12 +7,14 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <div>
           <div className="font-display text-lg font-bold">{site.name}</div>
-          <a
-            href={`mailto:${site.contactEmail}`}
-            className="mt-1 block text-sm text-white/60 transition-colors hover:text-white"
-          >
-            {site.contactEmail}
-          </a>
+          {site.contactEmail && (
+            <a
+              href={`mailto:${site.contactEmail}`}
+              className="mt-1 block text-sm text-white/60 transition-colors hover:text-white"
+            >
+              {site.contactEmail}
+            </a>
+          )}
         </div>
 
         <div className="flex items-center gap-4">

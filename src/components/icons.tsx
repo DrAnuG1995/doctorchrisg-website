@@ -28,6 +28,22 @@ export function YouTubeIcon(props: IconProps) {
   );
 }
 
+export function FacebookIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
+      <path d="M13.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.2-1.4 1.4-1.4h1.5V5.5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2H8.3V14h2.4v7h2.8Z" />
+    </svg>
+  );
+}
+
+export function LinkedInIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
+      <path d="M6.94 7.5A1.94 1.94 0 1 1 7 3.6a1.94 1.94 0 0 1-.06 3.9ZM5.3 9h3.3v11H5.3V9Zm5.2 0h3.16v1.5h.05c.44-.8 1.5-1.65 3.1-1.65 3.32 0 3.93 2.1 3.93 4.9V20h-3.3v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20h-3.3V9Z" />
+    </svg>
+  );
+}
+
 export function LinkIcon(props: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden {...props}>
@@ -59,5 +75,7 @@ export function platformIcon(platform: string, props?: IconProps) {
   if (key.includes("insta")) return <InstagramIcon {...props} />;
   if (key.includes("tiktok")) return <TikTokIcon {...props} />;
   if (key.includes("you")) return <YouTubeIcon {...props} />;
+  if (key.includes("face")) return <FacebookIcon {...props} />;
+  if (key.includes("linked")) return <LinkedInIcon {...props} />;
   return <LinkIcon {...props} />;
 }

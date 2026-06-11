@@ -32,8 +32,17 @@ export default function SocialSuccess() {
                   <span className="text-accent">{platformIcon(s.platform, { className: "h-5 w-5" })}</span>
                   <span className="text-sm font-medium">{s.platform}</span>
                 </div>
-                <div className="mt-3 font-display text-3xl font-bold">{s.followers}</div>
-                <div className="mt-1 text-sm text-ink/50">{s.handle}</div>
+                {s.followers ? (
+                  <>
+                    <div className="mt-3 font-display text-3xl font-bold">{s.followers}</div>
+                    <div className="mt-1 text-sm text-ink/50">{s.handle}</div>
+                  </>
+                ) : (
+                  <>
+                    <div className="mt-3 font-display text-2xl font-bold">{s.handle}</div>
+                    <div className="mt-1 text-sm font-medium text-accent">Follow →</div>
+                  </>
+                )}
               </div>
               <ArrowIcon className="h-5 w-5 -rotate-45 text-ink/30 transition-all group-hover:rotate-0 group-hover:text-accent" />
             </a>

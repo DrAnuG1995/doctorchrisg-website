@@ -44,7 +44,7 @@ export default function Hero() {
                 <span className="text-white/80 transition-colors group-hover:text-accent-2">
                   {platformIcon(s.platform, { className: "h-5 w-5" })}
                 </span>
-                <span className="font-semibold text-white">{s.followers}</span>
+                {s.followers && <span className="font-semibold text-white">{s.followers}</span>}
                 <span>{s.platform}</span>
               </a>
             ))}
