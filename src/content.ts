@@ -27,8 +27,8 @@ export const hero = {
   // Drop the headshot into /public and set the path here (e.g. "/chris-hero.jpg").
   photo: "/hero-portrait.jpg",
   eyebrow: "Doctor · Creator · Speaker",
-  headlineLead: "Still practising medicine.",
-  headlineHighlight: "Building an audience that matters.",
+  headlineLead: "From clinician",
+  headlineHighlight: "to creator.",
   credentialLine: "MBChB · Emergency medicine · Practising across QLD & NSW, Australia",
   subline:
     "I'm an emergency doctor who built a 300K+ audience teaching clinicians about longevity, lifestyle and life beyond burnout. Now I help other clinicians build their own platforms, through my course or 1:1 to get you started.",
