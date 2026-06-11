@@ -11,7 +11,7 @@ export default function FinalCta() {
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-white/70">
           Learn the system yourself, or have it done for you. Either way, you&apos;ll have a
-          presence that opens doors — built around your clinical life.
+          presence that opens doors, built around your clinical life.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <CtaButton href={hero.primaryCta.href} label={hero.primaryCta.label} />

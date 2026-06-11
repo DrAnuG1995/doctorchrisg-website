@@ -1,5 +1,6 @@
 import { socials, standoutPosts, socialFeatureImage } from "@/content";
 import ImageSlot from "./ImageSlot";
+import CountUp from "./CountUp";
 import { platformIcon, ArrowIcon } from "./icons";
 
 export default function SocialSuccess() {
@@ -14,7 +15,7 @@ export default function SocialSuccess() {
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-ink/70">
               This isn&apos;t theory. It&apos;s the same playbook Chris uses to grow his own
-              channels — every day, around clinical work.
+              channels, every day, around clinical work.
             </p>
           </div>
           {socialFeatureImage && (
@@ -51,7 +52,9 @@ export default function SocialSuccess() {
                 </div>
                 {s.followers ? (
                   <>
-                    <div className="mt-3 font-display text-3xl font-bold">{s.followers}</div>
+                    <div className="mt-3 font-display text-3xl font-bold">
+                      <CountUp value={s.followers} />
+                    </div>
                     <div className="mt-1 text-sm text-ink/50">{s.handle}</div>
                   </>
                 ) : (

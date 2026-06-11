@@ -7,7 +7,7 @@ type Props = {
   className?: string;
 };
 
-/** External CTA — every primary action opens the Stan Store in a new tab. */
+/** External CTA. Every primary action opens the Stan Store in a new tab. */
 export default function CtaButton({ href, label, variant = "primary", className = "" }: Props) {
   const base =
     "group inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent";

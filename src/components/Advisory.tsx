@@ -21,7 +21,7 @@ export default function Advisory() {
             </div>
 
             <div className="rounded-2xl bg-paper p-8 shadow-sm">
-              <h3 className="font-display text-lg font-semibold">We set up — you take it from there</h3>
+              <h3 className="font-display text-lg font-semibold">We set up, you take it from there</h3>
               <ul className="mt-6 space-y-4">
                 {advisory.deliverables.map((d) => (
                   <li key={d} className="flex items-start gap-3">

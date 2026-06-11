@@ -16,10 +16,10 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: `${site.name} — Helping clinicians grow on social media`,
+  title: `${site.name} | Helping clinicians grow on social media`,
   description: site.metaDescription,
   openGraph: {
-    title: `${site.name} — Helping clinicians grow on social media`,
+    title: `${site.name} | Helping clinicians grow on social media`,
     description: site.metaDescription,
     url: site.url,
     siteName: site.name,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Helping clinicians grow on social media`,
+    title: `${site.name} | Helping clinicians grow on social media`,
     description: site.metaDescription,
   },
 };

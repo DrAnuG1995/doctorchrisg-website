@@ -1,6 +1,7 @@
 import { hero, socials, metrics } from "@/content";
 import CtaButton from "./CtaButton";
 import ImageSlot from "./ImageSlot";
+import CountUp from "./CountUp";
 import { platformIcon } from "./icons";
 
 export default function Hero() {
@@ -44,7 +45,7 @@ export default function Hero() {
                 <span className="text-white/80 transition-colors group-hover:text-accent-2">
                   {platformIcon(s.platform, { className: "h-5 w-5" })}
                 </span>
-                {s.followers && <span className="font-semibold text-white">{s.followers}</span>}
+                {s.followers && <CountUp value={s.followers} className="font-semibold text-white" />}
                 <span>{s.platform}</span>
               </a>
             ))}
@@ -69,7 +70,9 @@ export default function Hero() {
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px px-5 sm:px-8 md:grid-cols-4">
           {metrics.map((m) => (
             <div key={m.label} className="px-2 py-7 text-center">
-              <div className="font-display text-3xl font-bold text-white">{m.value}</div>
+              <div className="font-display text-3xl font-bold text-white">
+                <CountUp value={m.value} />
+              </div>
               <div className="mt-1 text-xs uppercase tracking-widest text-white/50">{m.label}</div>
             </div>
           ))}

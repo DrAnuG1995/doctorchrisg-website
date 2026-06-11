@@ -1,12 +1,12 @@
 /**
  * Single source of truth for all site content + links.
  *
- * Edit THIS file to update the site — you should not need to touch the components.
+ * Edit THIS file to update the site; you should not need to touch the components.
  * Anything marked `[NEEDS: ...]` is a placeholder the client must supply.
  */
 
 // ---------------------------------------------------------------------------
-// Stan Store links — the two call-to-actions point at two separate products.
+// Stan Store links. The two call-to-actions point at two separate products.
 // ---------------------------------------------------------------------------
 export const STAN_STORE_URL = "https://stan.store/doctorchrisg"; // storefront
 export const STAN_STORE_COURSE_URL =
@@ -18,9 +18,9 @@ export const site = {
   name: "Dr Chris G.",
   domain: "drchrisg.com", // [NEEDS: confirm real domain]
   url: "https://drchrisg.com", // [NEEDS: confirm real domain]
-  contactEmail: "", // [NEEDS: public contact email — left blank so nothing fake is published]
+  contactEmail: "", // [NEEDS: public contact email, left blank so nothing fake is published]
   metaDescription:
-    "Dr Chris G. is a practising emergency doctor and creator with a 300K+ audience. He helps clinicians build trusted platforms on social media — through his course, The Content Dispensary, and 1:1 mentoring.",
+    "Dr Chris G. is a practising emergency doctor and creator with a 300K+ audience. He helps clinicians build trusted platforms on social media, through his course, The Content Dispensary, and 1:1 mentoring.",
 };
 
 export const hero = {
@@ -31,42 +31,42 @@ export const hero = {
   headlineHighlight: "Building an audience that matters.",
   credentialLine: "MBChB · Emergency medicine · Practising across QLD & NSW, Australia",
   subline:
-    "I'm an emergency doctor who built a 300K+ audience teaching clinicians about longevity, lifestyle and life beyond burnout. Now I help other clinicians build their own platforms — through my course, or 1:1 to get you started.",
+    "I'm an emergency doctor who built a 300K+ audience teaching clinicians about longevity, lifestyle and life beyond burnout. Now I help other clinicians build their own platforms, through my course or 1:1 to get you started.",
   primaryCta: { label: "Get the course", href: STAN_STORE_COURSE_URL },
   secondaryCta: { label: "Book a 1:1 call", href: STAN_STORE_ADVISORY_URL },
 };
 
-// Social platforms shown as proof. Per-platform follower counts are optional —
-// leave `followers: ""` and the card shows the handle + a "Follow" link instead.
+// Social platforms shown as proof. Follower counts animate from 0 on view.
+// Leave `followers: ""` to show the handle + a "Follow" link instead of a count.
 export const socials = [
   {
     platform: "Instagram",
     handle: "@doctorchrisg",
-    followers: "", // [NEEDS: follower count, e.g. "120K"]
+    followers: "88K",
     url: "https://www.instagram.com/doctorchrisg/",
   },
   {
     platform: "TikTok",
     handle: "@doctorchrisg",
-    followers: "", // [NEEDS]
+    followers: "72K",
     url: "https://www.tiktok.com/@doctorchrisg",
   },
   {
     platform: "YouTube",
     handle: "@doctorchrisg",
-    followers: "", // [NEEDS]
+    followers: "51K",
     url: "https://www.youtube.com/@doctorchrisg",
   },
   {
     platform: "Facebook",
     handle: "Doctor Chris G",
-    followers: "", // [NEEDS]
+    followers: "105K",
     url: "https://www.facebook.com/thedoctorchrisg",
   },
   {
     platform: "LinkedIn",
     handle: "Dr Christopher Grayston",
-    followers: "", // [NEEDS]
+    followers: "1K",
     url: "https://www.linkedin.com/in/doctorchrisg/",
   },
 ];
@@ -96,7 +96,7 @@ export const about = {
   heading: "From the ward to the feed",
   paragraphs: [
     "Chris is a UK-trained emergency medicine doctor with eight years of hospital experience across the NHS and Australia. In 2024 he stepped back from full-time acute care to travel, volunteer in under-resourced settings, and rethink how doctors communicate health online.",
-    "Creating content for clinicians on longevity, metabolic health, lifestyle and burnout, he built a cross-platform audience of 300,000+ — and was invited to speak at the Creative Careers in Medicine (CCIM 2025) national conference. He still works clinically as an emergency locum across QLD and NSW. The point: you don't have to leave medicine to build a platform that matters.",
+    "Creating content for clinicians on longevity, metabolic health, lifestyle and burnout, he built a cross-platform audience of 300,000+, and was invited to speak at the Creative Careers in Medicine (CCIM 2025) national conference. He still works clinically as an emergency locum across QLD and NSW. The point: you don't have to leave medicine to build a platform that matters.",
   ],
   credibility: [
     "MBChB, Keele University",
@@ -111,7 +111,7 @@ export const course = {
   name: "The Content Dispensary",
   eyebrow: "The course",
   tagline:
-    "The step-by-step system for clinicians who want to build a trusted platform on social media — properly.",
+    "The step-by-step system for clinicians who want to build a trusted platform on social media, properly.",
   audience:
     "For doctors, nurses, dentists, allied health and students who want a credible platform without risking their reputation or their registration.",
   outcomes: [
@@ -121,7 +121,7 @@ export const course = {
     "Stay professional and compliant as a clinician online",
     "Turn an audience into opportunities and income streams",
   ],
-  format: "[NEEDS: format — e.g. self-paced video modules + templates + community]",
+  format: "[NEEDS: format, e.g. self-paced video modules + templates + community]",
   price: "[NEEDS: price / tiers]",
   cta: { label: "Get The Content Dispensary", href: STAN_STORE_COURSE_URL },
 };
@@ -130,7 +130,7 @@ export const advisory = {
   eyebrow: "Work with Chris",
   heading: "New to social? Let's get you started.",
   blurb:
-    "Book a 1:1 call and we'll map out your niche, your platforms and your first content — so you leave with a clear plan and the momentum to actually post. Ideal for clinicians who know they should be online but don't know where to begin.",
+    "Book a 1:1 call and we'll map out your niche, your platforms and your first content, so you leave with a clear plan and the momentum to actually post. Ideal for clinicians who know they should be online but don't know where to begin.",
   deliverables: [
     "Clarity on your niche and the content that fits you",
     "The right platforms set up and positioned properly",
@@ -145,7 +145,7 @@ export const advisory = {
 export const testimonials = [
   {
     quote:
-      "[NEEDS: real student testimonial] I went from zero to a real audience in months — and it actually fits around clinical work.",
+      "[NEEDS: real student testimonial] I went from zero to a real audience in months, and it actually fits around clinical work.",
     name: "[NEEDS: name]",
     detail: "[NEEDS: role / handle]",
   },
