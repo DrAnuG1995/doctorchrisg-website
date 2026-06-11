@@ -1,4 +1,4 @@
-import { socials, standoutPosts } from "@/content";
+import { socials, standoutPosts, socialFeatureImage } from "@/content";
 import ImageSlot from "./ImageSlot";
 import { platformIcon, ArrowIcon } from "./icons";
 
@@ -6,15 +6,32 @@ export default function SocialSuccess() {
   return (
     <section id="proof" className="bg-cream">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">The proof</p>
-          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            A platform clinicians actually follow
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-ink/70">
-            This isn&apos;t theory. It&apos;s the same playbook Chris uses to grow his own
-            channels — every day, around clinical work.
-          </p>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">The proof</p>
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              A platform clinicians actually follow
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-ink/70">
+              This isn&apos;t theory. It&apos;s the same playbook Chris uses to grow his own
+              channels — every day, around clinical work.
+            </p>
+          </div>
+          {socialFeatureImage && (
+            <div className="relative mx-auto w-full max-w-xs">
+              <div className="absolute -inset-2 gradient-accent rounded-3xl opacity-30 blur-lg" />
+              <ImageSlot
+                src={socialFeatureImage}
+                alt="Dr Chris G. filming content"
+                label="[NEEDS: behind-the-scenes photo]"
+                ratio="aspect-[4/5]"
+                className="relative rounded-2xl shadow-xl"
+              />
+              <p className="relative mt-3 text-center text-xs uppercase tracking-widest text-ink/40">
+                Behind the scenes
+              </p>
+            </div>
+          )}
         </div>
 
         {/* platform cards */}

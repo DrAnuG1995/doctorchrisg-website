@@ -25,7 +25,7 @@ export const site = {
 
 export const hero = {
   // Drop the headshot into /public and set the path here (e.g. "/chris-hero.jpg").
-  photo: "", // [NEEDS: high-res headshot → /public]
+  photo: "/hero.jpg",
   eyebrow: "Doctor · Creator · Speaker",
   headlineLead: "Still practising medicine.",
   headlineHighlight: "Building an audience that matters.",
@@ -88,8 +88,11 @@ export const standoutPosts = [
   { caption: "Lifestyle design", image: "", url: "https://www.instagram.com/doctorchrisg/" },
 ];
 
+// Optional feature image for the "social success" section (e.g. behind-the-scenes).
+export const socialFeatureImage = "/filming.png";
+
 export const about = {
-  photo: "", // [NEEDS: portrait/lifestyle shot → /public]
+  photo: "/about.jpg",
   heading: "From the ward to the feed",
   paragraphs: [
     "Chris is a UK-trained emergency medicine doctor with eight years of hospital experience across the NHS and Australia. In 2024 he stepped back from full-time acute care to travel, volunteer in under-resourced settings, and rethink how doctors communicate health online.",
