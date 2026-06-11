@@ -18,7 +18,7 @@ export const site = {
   name: "Dr Chris G.",
   domain: "drchrisg.com", // [NEEDS: confirm real domain]
   url: "https://drchrisg.com", // [NEEDS: confirm real domain]
-  contactEmail: "", // [NEEDS: public contact email, left blank so nothing fake is published]
+  contactEmail: "hello@doctorchrisg.com",
   metaDescription:
     "Dr Chris G. is a practising emergency doctor and creator with a 300K+ audience. He helps clinicians build trusted platforms on social media, through his course, The Content Dispensary, and 1:1 mentoring.",
 };
