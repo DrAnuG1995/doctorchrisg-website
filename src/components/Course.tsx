@@ -27,7 +27,7 @@ export default function Course() {
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h3 className="font-display text-lg font-semibold">What you&apos;ll walk away with</h3>
+            <h3 className="font-display text-lg font-semibold">What&apos;s inside: the 6 shelves</h3>
             <ul className="mt-6 space-y-4">
               {course.outcomes.map((o) => (
                 <li key={o} className="flex items-start gap-3">

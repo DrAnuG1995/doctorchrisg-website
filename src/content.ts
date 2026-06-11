@@ -33,7 +33,7 @@ export const hero = {
   subline:
     "I'm an emergency doctor who built a 300K+ audience teaching clinicians about longevity, lifestyle and life beyond burnout. Now I help other clinicians build their own platforms, through my course or 1:1 to get you started.",
   primaryCta: { label: "Get the course", href: STAN_STORE_COURSE_URL },
-  secondaryCta: { label: "Book a 1:1 call", href: STAN_STORE_ADVISORY_URL },
+  secondaryCta: { label: "Book a free call", href: STAN_STORE_ADVISORY_URL },
 };
 
 // Social platforms shown as proof. Follower counts animate from 0 on view.
@@ -111,18 +111,19 @@ export const course = {
   name: "The Content Dispensary",
   eyebrow: "The course",
   tagline:
-    "The step-by-step system for clinicians who want to build a trusted platform on social media, properly.",
+    "The system I used to grow 300,000 followers in 300 days, even on 70-hour hospital weeks.",
   audience:
     "For doctors, nurses, dentists, allied health and students who want a credible platform without risking their reputation or their registration.",
   outcomes: [
-    "Find your niche and the content that actually performs",
-    "A repeatable filming + posting workflow that fits around shifts",
-    "Grow an engaged audience, not just vanity follower counts",
-    "Stay professional and compliant as a clinician online",
-    "Turn an audience into opportunities and income streams",
+    "Shelf 1: Start With Why",
+    "Shelf 2: Shorts That Actually Work",
+    "Shelf 3: Filming Without Fear",
+    "Shelf 4: Editing Without Losing Your Soul",
+    "Shelf 5: The System That Scales",
+    "Shelf 6: Posting + Strategy",
   ],
-  format: "[NEEDS: format, e.g. self-paced video modules + templates + community]",
-  price: "[NEEDS: price / tiers]",
+  format: "Self-paced video course · 6 video modules",
+  price: "$97 USD",
   cta: { label: "Get The Content Dispensary", href: STAN_STORE_COURSE_URL },
 };
 
@@ -130,7 +131,7 @@ export const advisory = {
   eyebrow: "Work with Chris",
   heading: "New to social? Let's get you started.",
   blurb:
-    "Book a 1:1 call and we'll map out your niche, your platforms and your first content, so you leave with a clear plan and the momentum to actually post. Ideal for clinicians who know they should be online but don't know where to begin.",
+    "Book a free 1:1 call and we'll map out your niche, your platforms and your first content, so you leave with a clear plan and the momentum to actually post. Ideal for clinicians who know they should be online but don't know where to begin.",
   deliverables: [
     "Clarity on your niche and the content that fits you",
     "The right platforms set up and positioned properly",
@@ -139,7 +140,7 @@ export const advisory = {
     "How to stay professional and compliant as a clinician online",
   ],
   audience: "Best for clinicians starting from zero who want a confident launch.",
-  cta: { label: "Book a 1:1 call with Chris", href: STAN_STORE_ADVISORY_URL },
+  cta: { label: "Book a free 1:1 call", href: STAN_STORE_ADVISORY_URL },
 };
 
 export const testimonials = [
