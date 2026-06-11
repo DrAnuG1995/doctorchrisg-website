@@ -1,4 +1,10 @@
 import { testimonials } from "@/content";
+import ImageSlot from "./ImageSlot";
+
+function initials(name: string) {
+  const parts = name.replace(/^(dr|mr|mrs|ms)\.?\s+/i, "").trim().split(/\s+/);
+  return ((parts[0]?.[0] ?? "") + (parts.at(-1)?.[0] ?? "")).toUpperCase();
+}
 
 export default function Testimonials() {
   return (
@@ -21,9 +27,23 @@ export default function Testimonials() {
               <blockquote className="mt-2 flex-1 text-lg leading-relaxed text-ink/80">
                 {t.quote}
               </blockquote>
-              <figcaption className="mt-6 border-t border-ink/10 pt-4">
-                <div className="font-semibold">{t.name}</div>
-                <div className="text-sm text-ink/50">{t.detail}</div>
+              <figcaption className="mt-6 flex items-center gap-3 border-t border-ink/10 pt-4">
+                {t.image ? (
+                  <ImageSlot
+                    src={t.image}
+                    alt={t.name}
+                    ratio="aspect-square"
+                    className="h-11 w-11 flex-none rounded-full"
+                  />
+                ) : (
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-accent/10 font-display text-sm font-semibold text-accent">
+                    {initials(t.name)}
+                  </div>
+                )}
+                <div>
+                  <div className="font-semibold">{t.name}</div>
+                  <div className="text-sm text-ink/50">{t.detail}</div>
+                </div>
               </figcaption>
             </figure>
           ))}

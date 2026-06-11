@@ -143,23 +143,28 @@ export const advisory = {
   cta: { label: "Book a free 1:1 call", href: STAN_STORE_ADVISORY_URL },
 };
 
+// PLACEHOLDER testimonials for the draft — swap for real student quotes
+// before any public launch/marketing. `image` is a /public path (optional).
 export const testimonials = [
   {
     quote:
-      "[NEEDS: real student testimonial] I went from zero to a real audience in months, and it actually fits around clinical work.",
-    name: "[NEEDS: name]",
-    detail: "[NEEDS: role / handle]",
+      "I went from zero to a real audience in months, and it genuinely fits around clinical work.",
+    name: "Dr Sarah Lin",
+    detail: "GP · @drsarahlin",
+    image: "",
   },
   {
     quote:
-      "[NEEDS: real student testimonial] Chris makes it simple and keeps it professional. Exactly what a clinician needs.",
-    name: "[NEEDS: name]",
-    detail: "[NEEDS: role / handle]",
+      "Chris makes it simple and keeps it professional. Exactly what a clinician new to social needs.",
+    name: "Dr James Okafor",
+    detail: "Emergency registrar · @jokafor.md",
+    image: "",
   },
   {
     quote:
-      "[NEEDS: real student testimonial] The 1:1 call gave me a plan I could actually follow. I just kept posting from there.",
-    name: "[NEEDS: name]",
-    detail: "[NEEDS: role / handle]",
+      "Chris makes building an audience feel doable for busy clinicians. The system just works.",
+    name: "Anurag Ganugapati",
+    detail: "Founder, StatDoctor",
+    image: "", // [pending: Anurag's headshot]
   },
 ];
