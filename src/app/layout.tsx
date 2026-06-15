@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { site } from "@/content";
 
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
-const playfair = Playfair_Display({
+const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-  style: ["normal", "italic"],
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${plusJakarta.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">{children}</body>
     </html>

@@ -13,7 +13,7 @@ export default function Course() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-2">{course.eyebrow}</p>
-            <h2 className="mt-4 font-display text-3xl font-bold italic tracking-tight sm:text-4xl">
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
               {course.name}
             </h2>
             <p className="mt-5 text-xl leading-relaxed text-paper/80">{course.tagline}</p>

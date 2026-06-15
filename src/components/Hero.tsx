@@ -22,7 +22,7 @@ function Blob() {
   );
 }
 
-/** Split "to creator." so "creator" renders in italic Playfair */
+/** Highlight the whole headline in the gradient colour */
 function HeadlineHighlight({ text }: { text: string }) {
   const keyword = "creator";
   const idx = text.indexOf(keyword);
@@ -32,7 +32,7 @@ function HeadlineHighlight({ text }: { text: string }) {
   return (
     <span className="text-gradient">
       {before}
-      <em className="italic">{keyword}</em>
+      <span>{keyword}</span>
       {after}
     </span>
   );
