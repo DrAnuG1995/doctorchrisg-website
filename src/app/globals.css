@@ -4,15 +4,15 @@
    Tailwind v4 turns each token into utilities (bg-ink, text-accent, font-display)
    AND exposes them as CSS vars (var(--color-accent)) for the helpers below. */
 @theme {
-  --color-ink: #0a1733; /* navy */
-  --color-ink-soft: #122a52; /* lighter navy */
-  --color-paper: #ffffff;
-  --color-cream: #eef3fb; /* cool light blue-grey */
-  --color-accent: #2563eb; /* blue */
-  --color-accent-2: #06b6d4; /* cyan */
-  --color-accent-3: #38bdf8; /* sky, sparingly */
+  --color-ink: #1a120b;        /* warm dark brown */
+  --color-ink-soft: #2d1f14;   /* slightly lighter warm brown */
+  --color-paper: #f5f0e8;      /* warm off-white / sand */
+  --color-cream: #ede8df;      /* slightly deeper warm white */
+  --color-accent: #b5622e;     /* terracotta */
+  --color-accent-2: #d4956a;   /* peach / lighter terracotta */
+  --color-accent-3: #e8c99a;   /* warm sand — used for blob */
 
-  --font-display: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+  --font-display: var(--font-display), "Playfair Display", Georgia, serif;
   --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
 }
 
@@ -27,7 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Energetic accent gradient + gradient text */
+/* Warm accent gradient + gradient text */
 .gradient-accent {
   background-image: linear-gradient(115deg, var(--color-accent), var(--color-accent-2));
 }

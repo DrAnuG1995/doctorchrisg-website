@@ -12,7 +12,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Loved by clinicians</p>
-          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="mt-4 font-display text-3xl font-bold italic tracking-tight sm:text-4xl">
             Results students talk about
           </h2>
         </div>
@@ -23,7 +23,7 @@ export default function Testimonials() {
               key={i}
               className="flex flex-col rounded-2xl border border-ink/10 bg-paper p-7 shadow-sm"
             >
-              <div className="font-display text-4xl leading-none text-accent/40">&ldquo;</div>
+              <div className="font-display text-4xl italic leading-none text-accent/50">&ldquo;</div>
               <blockquote className="mt-2 flex-1 text-lg leading-relaxed text-ink/80">
                 {t.quote}
               </blockquote>
@@ -36,7 +36,7 @@ export default function Testimonials() {
                     className="h-11 w-11 flex-none rounded-full"
                   />
                 ) : (
-                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-accent/10 font-display text-sm font-semibold text-accent">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-accent-3 font-display text-sm font-semibold text-ink">
                     {initials(t.name)}
                   </div>
                 )}

@@ -10,7 +10,7 @@ export default function SocialSuccess() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">The proof</p>
-            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="mt-4 font-display text-3xl font-bold italic tracking-tight sm:text-4xl">
               A platform clinicians actually follow
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-ink/70">
@@ -20,7 +20,7 @@ export default function SocialSuccess() {
           </div>
           {socialFeatureImage && (
             <div className="relative mx-auto w-full max-w-xs">
-              <div className="absolute -inset-2 gradient-accent rounded-3xl opacity-30 blur-lg" />
+              <div className="absolute -inset-2 rounded-3xl bg-accent-3 opacity-60 blur-lg" />
               <ImageSlot
                 src={socialFeatureImage}
                 alt="Dr Chris G. filming content"
