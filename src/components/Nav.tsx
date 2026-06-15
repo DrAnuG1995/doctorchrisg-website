@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <a href="#top" className="font-display text-lg font-bold tracking-tight text-ink">
+        <a href="#top" className="font-display text-lg font-bold text-ink">
           {site.name}
         </a>
         <nav className="hidden items-center gap-8 text-sm font-medium text-ink/60 md:flex">

@@ -6,7 +6,7 @@ export default function FinalCta() {
     <section className="relative overflow-hidden bg-ink text-paper">
       <div className="pointer-events-none absolute inset-0 bg-accent opacity-10" />
       <div className="relative mx-auto max-w-4xl px-5 py-24 text-center sm:px-8">
-        <h2 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
+        <h2 className="font-display text-4xl font-bold sm:text-5xl">
           Ready to build your platform?
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-paper/65">

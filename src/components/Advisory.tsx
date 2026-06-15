@@ -10,7 +10,7 @@ export default function Advisory() {
           <div className="grid gap-10 p-8 sm:p-12 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{advisory.eyebrow}</p>
-              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">
                 {advisory.heading}
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-ink/70">{advisory.blurb}</p>

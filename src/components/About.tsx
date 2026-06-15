@@ -8,7 +8,7 @@ export default function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:py-28">
         <div className="order-2 lg:order-1">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">About</p>
-          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">
             {about.heading}
           </h2>
           {about.paragraphs.map((p, i) => (

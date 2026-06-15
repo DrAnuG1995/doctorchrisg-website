@@ -71,7 +71,7 @@ export default function Hero() {
           <p className="animate-fade-up text-sm font-semibold uppercase tracking-[0.2em] text-accent">
             {hero.eyebrow}
           </p>
-          <h1 className="animate-fade-up delay-1 mt-5 font-display text-5xl font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="animate-fade-up delay-1 mt-5 font-display text-5xl font-bold leading-[1.08] sm:text-6xl lg:text-7xl">
             {hero.headlineLead}
             <br />
             <HeadlineHighlight text={hero.headlineHighlight} />
